@@ -1,0 +1,23 @@
+1.image
+
+	import cv2
+
+	img =cv2.imread(" #your image location ")
+
+	cv2.imshow("#name of your output ",img)
+
+	cv2.waitkey(0)
+
+
+2.video  capture  
+
+
+	import cv2
+
+	cap = cv2.VideoCapture("reso/y6uk.mp4")
+
+	while True:
+    		sucess , vid = cap.read()
+    		cv2.imshow("videos", vid)
+    		if cv2.waitKey(1) & 0xFF ==ord('m'):
+  		      break
